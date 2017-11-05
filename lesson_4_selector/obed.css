@@ -1,0 +1,47 @@
+
+main {
+    background: #3B3F45;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    color: #EB7E7F;
+    margin: 10px;
+    padding: 5px;
+
+}
+h2 {
+    text-align: center;
+    color: #EB7E7F;
+    margin: 10px;
+    padding: 5px;
+
+    }
+label:hover {
+    text-decoration: none;
+    background: #121a80;
+p {
+    background: #4A4F56;
+    margin: 200px;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+input {
+    text-align: center;
+    font-size: 10px;
+}
+}
+
+label {
+    text-align: center;
+    color: #EB7E7F;
+    margin: 10px;
+    padding: 5px;
+    display:block;
+}
+*{transition: all .1s ease-in;}

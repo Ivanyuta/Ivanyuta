@@ -1,0 +1,45 @@
+#main-li{
+    padding-left: 50px;
+/*вес по идентификатору -100*/
+}
+
+li {
+    color: darkred;
+    /*color: #FF0000; /*#ff0000*/
+    /*color: rgb (255,0,0);*/
+}
+/*вес по тегу 1*/
+li span {
+    color: #643660;
+}
+
+span {
+    color: #121a80;
+}
+
+.li-class {
+    color: black;
+    background: #e3e354;
+}
+/*вес по классу -10*/
+
+body {
+    /*background: eee !important;
+    /*самый весомый приоритет,
+    но использовать в крайних случаях*/
+}
+
+p {
+    color: crimson;
+    background: #cccccc;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-style: italic;
+    border: 2px dashed #000000;
+    text-shadow: 22px 22px 8px rgba(150, 150, 66, 1);
+    line-height: 150%;
+    letter-spacing: 5px;
+}

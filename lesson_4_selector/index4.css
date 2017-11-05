@@ -1,0 +1,119 @@
+* {
+    outline: none;
+}
+
+main {
+    background: #3B3F45;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main * {
+    margin: 10px;
+}
+
+div {
+    background: #bbbbbb;
+}
+
+#div-with-text {
+    text-decoration: underline;
+}
+
+.text-blocks > div {
+    font-style: italic;
+}
+
+div > div {
+    font-style: normal;
+}
+
+/*селектор потомков*/
+footer > div {
+    font-style: italic;
+}
+footer span {
+    font-style: normal;
+}
+
+/* селектор соседей - первый дочерний элемент относительно родительского*/
+footer span:first-child {
+    color:red;
+}
+
+/* селектор соседей - последний дочерний*/
+footer span:last-child {
+    color:blue;
+}
+
+/* селектор соседей - последний элемент одинакового типа*/
+footer span:last-of-type {
+    color:greenyellow;
+}
+
+/*выбирает конкретный номер из списка */
+footer span:nth-child(4) {
+    color: orange;
+}
+
+/*выбирает конкретный номер, но уже с КОНЦА*/
+footer span:nth-last-child(2) {
+    color: darkred;
+}
+
+/*селекторы соседей*/
+footer ul li[data-kruto="el-2"] {
+    color: crimson;
+}
+footer ul li[data-kruto="el-2"] ~ li {
+    color: chartreuse;
+}
+
+footer ul li[data-kruto="el-2"] + li {
+    color: darkslategray;
+}
+
+a {
+    display: block;
+}
+ /* обращение ко всем ссылкам, начинающимся с ...*/
+a[href^=http] {
+    color: #67ff3b;
+}
+/* обращение ко всем ссылкам, заканчивающимся с ...*/
+a[href$='.se'] {
+  color: #e33939;
+}
+a[href*=b]{
+    color: orange;
+}
+/*изменение при наведение курсора на ссылку*/
+a:hover {
+    text-decoration: none;
+    background: #121a80;
+}
+
+/* в домашнем задании - использоваить псвлоэлемент*/
+footer:before,
+footer:after {
+   content: ''; /*этот элемент обязателен даже пустой*/
+    /*горизонтальную черту*/
+    display: block;
+    height: 3px;
+    background: #333333;
+}
+
+/*изменение цвета ссылки если на него заходили*/
+
+a:visited {
+    color: #e323c1;
+}
+/*выделить строку ввода*/
+
+input[type=text] {
+    border:3px solid red;
+}
+input:focus {
+    border-color:red;
+}

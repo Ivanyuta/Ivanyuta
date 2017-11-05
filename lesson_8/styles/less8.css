@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+    url('../fonts/SegoeUI-Bold.woff') format('woff'),
+    url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 10px;
+    background: #464f54;
+    padding-top: 100px;
+}
+
+/*div {*/
+    /*margin-bottom:100px;*/
+/*}*/
+main {
+    width: 80%;
+    margin: 0 auto ;
+    background: white;
+}
+
+main:before {
+    content: '';
+    display: inline-block;
+}
+
+.black_block {
+    background: #181818;
+    height: 100px;
+    margin: -50px 0 0 20%;
+    width: 100%;
+}
+
+.yellow_block {
+    background: #f7bd2c;
+    height: 30px;
+    margin: 0 0 0 50px;
+    width: calc(100% - 10px);
+}
+}
+
+ element.style {
+     display: inline-block;
+ }

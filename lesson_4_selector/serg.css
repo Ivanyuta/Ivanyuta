@@ -1,0 +1,102 @@
+html {
+    background-color: white;
+}
+
+body {
+    background-color: darkgray;
+    padding: 10px 200px 20px 200px;
+    border: 1px solid black;
+    margin: 15px;
+    width: 70%;
+}
+
+header h1 {
+    font-size: 25px;
+    font-style: inherit;
+    font-family: "Times New Roman";
+    text-align: center;
+    color: #ff5d49 ;
+    background-color: #d8d8d8 ;
+    border: 1px solid #f2ffb8 ;
+    padding: 10px;
+
+}
+
+h1 strong {
+    font-size: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+
+    margin-left: -40px;
+    padding: 10px;
+
+}
+
+li {
+    background-color: aliceblue;
+    font-size: 20px;
+
+}
+
+span {
+    font-size: 14px;
+}
+
+div strong {
+    font-family: "Arial Narrow";
+    font-size: 25px;
+}
+
+div {
+    text-align: center;
+    color: #ff2b77 ;
+    background-color: #d8d8d8 ;
+    align: center;
+}
+
+#plates {
+
+}
+
+/*li:nth-child(2), li:nth-child(6){*/
+/*text-decoration: line-through;*/
+/*}*/
+
+li:nth-child(2n) {
+    background-color: royalblue;
+}
+
+a {
+    color: rgba(95, 190, 70, 0.93);
+    text-decoration: none;
+}
+
+a:hover {
+    border: 1px dotted royalblue;
+    padding: 3px;
+}
+
+footer {
+
+    padding: 10px;
+    background: aqua;
+}
+
+li:hover {
+    background: red;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+
+.ch:checked {
+    background: white;
+}
+
+input:checked + label{
+    background: black;
+}

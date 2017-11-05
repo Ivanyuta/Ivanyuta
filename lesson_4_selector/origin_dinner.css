@@ -1,0 +1,38 @@
+form {
+    width: 500px;
+    margin: 20px auto;
+    /*задний фон*/
+    background: grey;
+    font-size: 0;
+}
+
+/*что бы блоки располагались один под другим*/
+/*display: block;*/
+div {
+       /*расстояние*/
+    padding: 10px;
+}
+
+/*выбрать четные нечетные элементы*/
+/*2n каждый второй элемент (если 3 то третий элемент)*/
+/*even - чередовать через одну*/
+div:nth-child(even) {
+    background: #aaaaaa;
+}
+
+label {
+    width: calc(100% - 20px);
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+input {
+    width: 20px;
+    margin: 0;
+}
+
+/*зачеркивание*/
+input:checked + label {
+    text-decoration: line-through;
+}
+

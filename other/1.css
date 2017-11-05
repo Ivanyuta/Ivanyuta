@@ -1,0 +1,33 @@
+div {
+    margin-bottom: 5px;
+    padding: 10px 10px 5px 25px;
+    background-color: #CB8C1D;
+    border: 4px double black;
+    width: 75%;
+    ;
+}
+
+.left-column {
+    width: 50%;
+    min-height: 100px;
+    background-color: #F2EFE4;
+    float: left;
+    border: 4px double black;
+}
+
+.right-column {
+    width: 35%;
+    min-height: 100px;
+    background-color: #4C3327;
+    float: right;
+    border: 4px double black;
+}
+
+.footer {
+    clear: both;
+    background-color: #BD3632;
+}
+
+h1 {
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+body {
+    background: #EBF7E3;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+img {
+    text-align: center;
+}
+h3 {
+     font-size: 30px;
+    text-decoration: underline;
+}
+
+ul {
+    background: #a9d4e7;
+
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Comic Sans MS";
+}
+li {
+    font-style: inherit;
+    line-height: 150%;
+    letter-spacing: 5px;
+
+}
+
+thead tr {
+    background: #5b8991;
+
+}
+tr {
+    background: #f5f7e2;
+}
+
+footer {
+    font-style: italic;
+    text-shadow: 22px 22px 8px rgba(150, 150, 66, 1);
+}

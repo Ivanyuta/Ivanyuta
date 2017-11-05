@@ -1,0 +1,34 @@
+/*ниже два боди это css хак, типа читерство/хитрость*/
+body {
+    font-size: 0px;
+}
+
+body * {
+    font-size: 20px;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background: #333333;
+    /*auto в  margin это выравнивание по центру; для строчных элементов не применяется.*/
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+span {
+    /* строчным элементам не применяется высота и ширина*/
+    width: 200px;
+    height: 200px;
+    background: #5b8991;
+    /*margin действует только для горизонтали, по вертикали не работает*/
+    margin: 20px;
+    padding: 30px;
+    /* inline-block среднее значение между блочным и строчным элементом*/
+    display: inline-block;
+    /*что бы по центру разместить инлайн блочный элемент применяем text-align: center;*/
+    /*после display: inline-block; и margin начинает к ним применяться*/
+    /*border рамка*/
+    border: 10px solid #4C3327;
+    /*обозначаем им фиксированной высоту и широту и не хотим что бы менялись размеры margin и */
+    box-sizing: border-box;
+}
