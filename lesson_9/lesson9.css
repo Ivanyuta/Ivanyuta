@@ -1,1 +1,230 @@
-/*texttransform*/
+@font-face {
+    font-family: 'Big John';
+    src: url('fonts/BigJohn.woff2') format('woff2'),
+    url('fonts/BigJohn.woff') format('woff'),
+    url('fonts/BigJohn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Slim Joe';
+    src: url('fonts/SlimJoe.woff2') format('woff2'),
+    url('fonts/SlimJoe.woff') format('woff'),
+    url('fonts/SlimJoe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section_inner,
+.latest_inner{
+    max-width: 1140px; /*максим ширига*/
+    margin: 0 auto; /*выравнивание по центру только для блочн эл-тов*/
+}
+header a,
+header ul  {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+ul {
+    padding-left: 600px;
+}
+ul.hr li {
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+     padding: 3px; /* Поля вокруг текста */
+    color: white;
+    padding-left: 600px;
+    vertical-align: middle;
+}
+
+.main_section h1 { /*применяем только к ш1 в секции*/
+    text-align: center;
+    font-family: "Big John" , sans-serif;
+    font-size: 46px;
+    text-transform: uppercase; /*большие буквы*/
+    color: white;
+    margin: 190px 0 0 0;
+}
+
+
+.main_section h2 {
+    font-family: "Slim Joe" , sans-serif;
+    font-size:30px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.main_section {
+    background: grey url("img/computer.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.main_section .section_inner > a { /*прямой потомок иннера внутри секции*/
+    text-transform: uppercase; /*большие буквы*/
+    margin: 40px auto 0;
+    border: 2px solid #48bf72; /* рамка в формате: толщина тип цвет*/
+    color: #48bf72;
+    display: block; /*из строчного элемента сделали блочный*/
+    width: 136px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+/*middle section*/
+.middle_inner {
+    max-width: 1140px; /*максим ширига*/
+    margin: 0 auto; /*выравнивание по центру только для блочн эл-тов*/
+}
+
+ul.md li {
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+    color: black;
+    /*border: 2px solid #eaeaea;*/
+    background: #eaeaea;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+   }
+
+.md {
+    padding: 50px 0 0 300px;
+
+}
+.one {
+    width: 450px;
+    height: 830px;
+    background: white;
+    /*auto в  margin это выравнивание по центру; для строчных элементов не применяется.*/
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 46px;
+}
+.two {
+    width: 650px;
+    height: 830px;
+    background: white;
+    /*auto в  margin это выравнивание по центру; для строчных элементов не применяется.*/
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 46px; /*странно как то радиус поставило??????*/
+}
+.lato_bold  { /* не понятно почему не применилось?????*/
+    background: #48bf72;
+    color: white;
+}
+/*последний блок*/
+.last_section {
+    background: white url("img/men-computer.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+.last_inner {
+    max-width: 1140px; /*максим ширига*/
+    margin-left: 750px;
+    height: 500px;
+    padding-top: 100px;
+    padding-right: 200px;
+    color: white;
+    text-align: justify;
+    /*margin: 0 auto; !*выравнивание по центру только для блочн эл-тов*!*/
+}
+
+.last_inner h3 h4 h5 {
+    color: white; /*почему нет белого цвета??????*/
+}
+h3 {
+    font-size:30px;
+}
+h4 {
+    font-size:22px;
+}
+h5 {
+    font-size:16px;
+    line-height: 1,2;
+}
+
+.last_section .last_inner > a { /*прямой потомок иннера внутри секции*/
+    text-transform: uppercase; /*большие буквы*/
+    margin: 40px auto 0;
+    border: 2px solid #3c4955; /* рамка в формате: толщина тип цвет*/
+    color: #3c4955;
+    display: block; /*из строчного элемента сделали блочный*/
+    width: 136px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.latest_inner > h3 { /*прямой потомок иннера внутри секции*/
+    text-transform: uppercase; /*большие буквы*/
+    margin: 40px auto 0;
+
+    color: #48bf72;
+    /*display: block; !*из строчного элемента сделали блочный*!*/
+    width: 250px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+
+footer {
+    background: #3c4955;
+}
+
+.latest_section a {
+    background: #ffff00;
+    display: inline-block;
+    margin: 15px 0 0 190px;
+}
+label {
+    position: relative;
+    display: block;
+}
+label:before,
+label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    background-color: #3c4955;
+}
+label:before {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    background: #3c4955;
+}
+textarea {
+    display: block;
+    width: 500px;
+    height: 300px;
+    resize: none;
+}
+
+.name {
+    background: #3c4955 url("img/user.jpg");
+}
+
+label:after {
+    border: 6px solid transparent;
+    border-left-color: #3c4955;
+    top: 5px;
+    left: 30px;
+}
+

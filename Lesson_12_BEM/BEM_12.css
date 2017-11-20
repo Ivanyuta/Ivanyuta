@@ -1,0 +1,169 @@
+/*расширение png svg отличается в том, что svg это векторная графика и не теряет качество при увеличении масштаба*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400');
+html {
+    height: 100%; /*делает размер на весь экран*/
+}
+html, body {
+   min-height: 100%; /*делает размер на весь экран*/
+}
+
+body {
+    margin: 0;
+    background: url(nikeproductcard-assets/bg.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+body:before { /*для того что бы пропал скролл (лифт)*/
+    content: '';
+    display: inline-block;
+}
+.header {
+    width: 750px;
+    margin: 26px auto;
+    padding-top: 26px;
+}
+
+.menu,.header__menu-btn  {
+    float: right;
+    }
+
+.header__menu-btn {
+    display: inline-block;
+    height: 13px;
+    width: 22px;
+    background: url("nikeproductcard-assets/btn_menu.png");
+}
+.menu__item {
+    display: inline-block; /*что бы пункты меню стали строчные*/
+    line-height: 150%;
+    }
+.menu {
+    margin: -2px 50px 0 0;
+    padding: 0;
+    font: 300 12px 'Roboto', sans-serif;
+    margin-right: 50px;
+}
+
+.menu__item a {
+    color: white;
+    text-decoration: none; /*убрать подчеркивание в ссылке*/
+    text-transform: uppercase; /*большие буквы*/
+    margin-right: 75px; /*что бы меню разошлось по длине*/
+}
+
+.menu__item a:hover {
+    border-bottom: 1px solid white;
+}
+
+.product {
+    width: 750px;
+    height: 430px;
+    background: #ffffff;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.product:before,
+.product:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+}
+.product:before {
+    width: 110%;
+    height: 90%;
+    top: 5%;
+    left: -5%;
+}
+.product:after {
+    width: 120%;
+    height: 80%;
+    top: 10%;
+    left: -10%;
+}
+.product-slider {
+    width: 502px;
+    height: 100%;
+    background: #f4f4f4;
+    float: left;
+}
+
+.product-slider-thumbnails {
+    text-align: center;
+
+}
+
+.product-slider__img {
+    text-decoration: none; /*убрать подчеркивание в ссылке*/
+    display: inline-block;
+    margin: 10px;
+}
+
+.product-info {
+    position: relative;
+    float: right;
+    width: 248px;
+    padding: 45px 32px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.product-info__close {
+    display: inline-block;
+    background: url("nikeproductcard-assets/btn_close.png");
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.product-info__label {
+    padding: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+.product-info__label--new {
+    background: #ffa60d;
+    color: white;
+    font:  14px 'Roboto', sans-serif;
+}
+.product-name {
+    font: 24px 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+.product-name__color--blue {
+    color: #5e4fff;
+}
+
+.product-rating {
+    font: 12px 'Roboto Condensed', sans-serif;
+    margin: 15px 0 0 0;
+    }
+
+.product-rating-stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.product-rating__stars {
+    display: inline-block;
+}
+.product-rating__stars a {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: url("nikeproductcard-assets/star.png");
+
+}
+
+.product-rating__stars--active a {
+    background: url("nikeproductcard-assets/star_grey.png");
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BEM_NIKE</title>
+    <link rel="stylesheet" href="BEM_12.css">
+</head>
+<body>
+    <header class="header">
+        <!--a[href=#].header__logo+(ul.menu>li.menu__item*4>a[href=#])^^+a[href=#].header__menu-btn /*^ - это подняться на один уровень, menu-btn - это придуманное название, двойное подчеркивание это разделение блоков и элементов*/-->
+
+        <a href="#" class="header__logo">
+            <img src="nikeproductcard-assets/logo.png" alt="logo">
+        </a>
+        <a href="#" class="header__menu-btn"></a>
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="#">Lifestyle</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Running</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Football</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Skateboarding</a>
+            </li>
+        </ul>
+    </header>
+    <section class="product">
+        <div class="product-content">
+        <div class="product-slider">
+            <div class="product-slider__main-img">
+                <img src="nikeproductcard-assets/main-img.jpg" alt="Nike Product 1">
+            </div>
+            <div class="product-slider-thumbnails">
+                <a href="#" class="product-slider__img">
+                    <img src="nikeproductcard-assets/item-1.jpg" alt="">
+                </a>
+                <a href="#" class="product-slider__img">
+                    <img src="nikeproductcard-assets/item-2.jpg" alt="">
+                </a>
+                <a href="#" class="product-slider__img">
+                    <img src="nikeproductcard-assets/item-3.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="product-info">
+            <a href="#" class="product-info__close"></a>
+            <h2 class="product-info__label product-info__label--new">New</h2>
+            <!--h1.product-name>.span.product-name__color&#45;&#45;blue-->
+            <h1 class="product-name">
+                THE
+                <span class="product-name__color--blue">
+ RUNNING
+
+                </span>
+                <br>
+                HAS JUST BEGUN
+            </h1>
+            <div class="product-rating">
+                Huarache
+                <!--ul.product-rating-stars>li.product-rating__star*5>a[href=#]-->
+                <ul class="product-rating-stars">
+                    <li class="product-rating__star product-rating-stars--active">
+                        <a href="#"></a>
+                    </li>
+                    <li class="product-rating__star product-rating-stars--active">
+                        <a href="#"></a>
+                    </li>
+                    <li class="product-rating__star product-rating-stars--active">
+                        <a href="#"></a>
+                    </li>
+                    <li class="product-rating__star product-rating-stars--active">
+                        <a href="#"></a>
+                    </li>
+                    <li class="product-rating__star">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

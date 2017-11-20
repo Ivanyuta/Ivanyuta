@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+
+.relative-block {
+    width:80%;
+    margin: 0 auto; /*po centru*/
+
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background: #333333;
+    margin: 20px;
+}
+
+.item.flr {
+    float: left;
+    background: darkblue;
+}
+.item.fll {
+    float: right;
+    background: hotpink;
+}
+
+.item.fn {
+    float: none;
+    background: lightslategrey;
+}
+.item:first-child {
+    float: left; /*начинает вести себя как инлайблочный элемент и занимает 0 высоту*/
+    background: darkred;
+}
+/*float имеет всего два значения: left and right*/
+
+.item:nth-child(2) {
+    float: right;
+    background: green;
+}
+
+.dib {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: yellow;
+    display: inline-block;
+}
+
+.cleaner {
+    display: block;
+    clear: both;
+}
+
+section:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.el-fll {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    float: right;
+    font-size: 40px;
+}
+
+.description {
+    font-size: 40px;
+}
+
+/*Так вставлять можно фото в текст*/
+.my-photo {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background: yellow;
+    margin: 20px;
+}
+
+.board {
+    width: 600px;
+    height: 600px;
+
+}
+
+.col {
+    float: left;
+    width: 12.5%;
+    height: 100%;
+}
+
+.cell {
+    height: 12.5%;
+    background: blueviolet;
+    margin-top: 100%;
+}
+
+.col:nth-child(even) .cell{
+    margin-top: 0;
+    margin-bottom: 100%;
+}

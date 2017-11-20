@@ -1,0 +1,38 @@
+/*kvadrat*/
+
+.board {
+    background: white;
+    width: 70vw;
+    height: 70vw;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.cell {
+    width: 12.5%;
+    height: 12.5%;
+    background: #333333;
+    margin-right: 12.5%;
+    display: inline-block;
+}
+.row:nth-child(even).cell {
+    margin-left: 12.5%;
+    margin-right: 0;
+}
+
+.row {
+    height: 12.5%;
+    font-size: 0;
+}
+
+.row:nth-child(even).cell:befor {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+/*.board:before {*/
+    /*content: '';*/
+    /*height: 0;*/
+    /*padding-top: 100%;*/
+/*}*/

@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+div {
+    font-size:40px;
+}
+
+.background {
+    position: fixed;
+    width: 100vw; /*100%ширины  экрана*/
+    height: 100vw; /*100% высоты экрана*/
+    background: rgba(0,0,0, .5); /*полупрозрачный фон*/
+}
+
+.wrapper {
+    position: relative;
+    width: 100%; /*100%ширины  экрана*/
+    height: 100%; /*100% высоты экрана*/
+}
+
+.modal {
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.model_inner {
+    position: relative;
+    width: 100%; /*100%ширины  экрана*/
+    height: 100%; /*100% высоты экрана*/
+    padding-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/*second variant*/
+
+.popup {
+    width: 50%; /*100%ширины  экрана*/
+    height: 50%; /*100% высоты экрана*/
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -25%;
+}

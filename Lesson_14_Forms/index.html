@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="main_forms.css">
+</head>
+<body>
+<form action="" method="get">
+    <label> Your name:<input type="text" name="name" tabindex="1">
+        <!--tabindex="1" это приоритетность перескакивания таба-->
+        <br>
+        <br>
+        <br>
+    </label>
+    <input type="email" minlength="8" maxlength="50" placeholder="Email" name="email" value="email.gmail.com">
+    <br>
+    <br>
+    <br>
+    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment" tabindex="3"></textarea>
+    <br>
+    <br>
+    <br>
+
+    <input type="Password" placeholder="Your password">
+
+    <br>
+    <br>
+    <br>
+       <input type="checkbox" name="chb1" id="chb-1">
+    <label for="chb-1" class="styled_chb">checkbox text 1</label>
+    <input type="checkbox" name="chb1" id="chb-2" checked="checked">
+    <label for="chb-2" class="styled_chb">checkbox text 2</label>
+    <input type="checkbox" name="chb1" id="chb-3" checked="checked">
+    <label for="chb-3" class="styled_chb">checkbox text 3</label>
+    <br>
+    <br>
+    <br>
+
+    <select name="select" id="select">
+        <option value="1">BMW</option>
+        <option value="2" selected="selected">Audi</option>
+        <option value="3">Mers</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <!--label*2>input[type=radio]+{label radio $}-->
+    <!--в радиобаттонах выбор толлкьо одного-->
+    <label for="">
+        <input type="radio" name="rad-1">
+        label radio 1
+    </label>
+    <label for="">
+        <input type="radio" name="rad-1" checked="checked">
+        label radio 2
+    </label>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Отправить наши данные" tabindex="2">
+</form>
+</body>
+</html>
