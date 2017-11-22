@@ -1,0 +1,21 @@
+[class^=col] {
+    display: inline-block;
+    font-size: 14px;
+}
+.colored-block {
+    height: 100px;
+    background: purple;
+    margin: 10px;
+}
+[class^=row] {
+    font-size: 0;
+}
+
+.row-12 .col-6 {
+    width: 50%;
+    height: 150px;
+}
+.row-12 .col-4 {
+     width: 16.66%;
+ }
+

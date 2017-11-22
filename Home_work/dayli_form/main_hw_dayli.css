@@ -4,9 +4,8 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    max-width: 1000px;
-    margin-left: 50px;
-    margin-right: 50px;
+    max-width: 100%;
+ 
 }
 .section_inner {
     max-width: 1000px; /*максим ширига*/
