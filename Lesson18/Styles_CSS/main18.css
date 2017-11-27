@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+}
+.content-inner {
+    /*важно не width просто, а max-width. Потому что при width была бы внизу полоса прокрутки, а не сжимание */
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+header {
+    height: 56px;
+    position: absolute;
+    width: 100%;
+   }
+header .content-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+}
+/*добавляем клинир*/
+ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header ul li {
+    display: inline-block;
+    float: left;
+    text-transform: uppercase;
+}
+a {
+    /*сбросить подчеркивание ссылок*/
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-section {
+    /*при загрузке секция занимает 100% высоты экрана*/
+    min-height: 100vh;
+      /*действия с задним фоном*/
+    background: white url("../img/strawb.jpg") right center/cover no-repeat;
+}
+.main-section .section-text {
+    width: 33.33%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.main-section >.content-inner {
+    /*> этот значок важен что бы применилось именно к блоку*/
+    min-height: 100vh;
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+#scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    /*сдвинуть влево на половину своей ширины что бы была четко по центру*/
+    transform: translateX(-50%);
+}
+.section-text {
+    justify-content: center;
+}
+h3 {
+    font-size: 60px;
+}
+.button {
+    background: #ff6033;
+    text-transform: uppercase;
+    color: white;
+    min-width: 200px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*эффекты*/
+.button:hover {
+    background: darkred;
+}
+
+/*ВТОРАЯ СЕКЦИЯ*/
+#section-about {
+    background: #00b1b1 url("../img/cupwithmalina.png") no-repeat left;
+
+}
+#section-about .about {
+    width: 40%;
+    /*min-width: 700px;*/
+    display: flex;
+    flex-direction: column;
+}
+#section-about > .content-inner {
+    min-height: 700px;
+    /*> этот значок важен что бы применилось именно к блоку*/
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    position: relative;
+}
+h1 {
+    font-size: 90px;
+    color: white;
+    text-transform: capitalize;
+}
+/*?????????????????????????????????????????*/
+
+
+.about p {
+    font-size: 17px;
+    color: white;
+}
+
+.about {
+    justify-content: flex-end;
+    margin-left: 700px;
+}
+
+/*ТРЕТЬЯ СЕКЦИЯ*/
+.tomato {
+    background: #70bfff url("../img/tomato.png") right  no-repeat;
+}
+.tomato > .content-inner {
+    height: 790px;
+    /*> этот значок важен что бы применилось именно к блоку*/
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.buttons a {
+     background: white;
+    text-transform: uppercase;
+    color: black;
+    line-height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    min-width: 400px;
+    height: 100px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.buttons h1 {
+    float: right;
+    text-transform: uppercase;
+    position: relative;
+     margin: 0 auto;
+    margin-top: 250px;
+
+}

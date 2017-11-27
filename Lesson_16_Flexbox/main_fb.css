@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1140px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 360px;
+    border: 1px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.double-item {
+    justify-content: flex-end;
+    width: 740px;
+    background: url("blog-grid-assets/big_car.jpg");
+}
+
+img {
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+}
+.ava {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: grey;
+    border-radius: 50%;
+    align-self: flex-end;
+}
