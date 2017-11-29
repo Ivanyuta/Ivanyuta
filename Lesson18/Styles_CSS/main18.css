@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 body {
     margin: 0;
 }
@@ -152,8 +153,7 @@ h1 {
     line-height: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 10px;
-    margin-top: 20px;
+       margin-top: 20px;
     min-width: 400px;
     height: 100px;
     text-align: center;
@@ -239,8 +239,21 @@ h1 {
 }
 /*конец заготовки по сеткам*/
 
-img {
-    width: 100%;
+.tomato img {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.tomato ul li span {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 2px;
+    display: inline-block;
 }
 .four {
     background: #ffe92f;
@@ -256,4 +269,106 @@ img {
     text-align: center;
     width: 630px;
     padding-left: 250px;
+}
+
+.tomato ul li {
+    display: block;
+    position: relative;
+}
+
+.blog {
+    background: #b07cf7;
+}
+
+.blog p {
+    margin: 0 auto;
+    width: 570px;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+}
+.line {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    right: 110px;
+}
+
+.blog h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.chernika {
+    background: url("../img/chernika.png") right center/cover no-repeat;
+}
+.chernika > .content-inner {
+    height: 790px;
+    /*> этот значок важен что бы применилось именно к блоку*/
+    /*display: flex;*/
+    padding-top: 56px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    position: relative;
+}
+.submit {
+    width: 170px;
+    height: 60px;
+    background: #96b92c;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+}
+.mail {
+    width: 570px;
+    height: 55px;
+    display: inline-block;
+}
+
+.chernika p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: black;
+    width: 570px;
+    padding-bottom: 40px;
+    padding-top: 34px;
+}
+
+.blog p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+.blog img {
+    margin: 0 auto;
+    width: 370px;
+    height: 300px;
+    position: absolute;
+}
+.blog .row-12 p {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    background: rgb(81, 87, 97, 0.5);
+    color: white;
+    text-align: center;
+    left: -115px;
+    top: 35px;
+
+    }
+.bottom {
+    width: 310px;
+    height: 80px;
+    position: relative;
+    bottom: -156px;
+    color: white;
 }
