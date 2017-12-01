@@ -296,11 +296,8 @@ h1 {
     right: 110px;
 }
 
-.blog h1 {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-}
+
+
 .chernika {
     background: url("../img/chernika.png") right center/cover no-repeat;
 }
@@ -337,11 +334,20 @@ h1 {
     padding-bottom: 40px;
     padding-top: 34px;
 }
+.blog {
+    min-height: 862px;
 
+}
+.blog h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
 .blog p {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     color: white;
+
 }
 
 .blog img {
@@ -371,4 +377,73 @@ h1 {
     position: relative;
     bottom: -156px;
     color: white;
+}
+.contact {
+    background: url("../img/bg_contact.png") right center/cover no-repeat;
+    /*width: 1500px;*/
+    min-height: 870px;
+}
+/*.contact > .content-inner {*/
+    /*height: 790px;*/
+    /*padding-top: 56px;*/
+    /*padding-bottom: 200px;*/
+    /*box-sizing: border-box;*/
+    /*position: relative;*/
+
+.contact h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+   padding: 0;
+}
+.contact p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: black;
+    width: 370px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+input {
+    background: #63d1d1;
+    width: 500px;
+    height: 50px;
+    color: white;
+}
+#comment {
+    width: 500px;
+    height: 250px;
+    background: #63d1d1;
+    overflow: hidden; /*если есть полоса прокрутки*/
+
+
+}
+textarea {
+    color: white;
+}
+
+textarea:hover {
+    background: #00c4c4;
+}
+.contact .col-6 p {
+    left: 5px;
+}
+
+footer {
+    min-height: 90px;
+    background: #000;
+    color: #a3a3a3;
+}
+
+footer .col-3 {
+     padding-left: 90px;
+ }
+footer .col-2 {
+    margin-top: 10px;
 }
