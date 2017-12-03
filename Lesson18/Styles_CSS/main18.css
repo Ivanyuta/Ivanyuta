@@ -364,7 +364,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 17px;
-    background: rgb(81, 87, 97, 0.5);
+    background: rgba(170,170,170,0.54);
     color: white;
     text-align: center;
     left: -115px;
@@ -429,6 +429,7 @@ textarea {
 }
 
 textarea:hover {
+    color: grey;
     background: #00c4c4;
 }
 .contact .col-6 p {
