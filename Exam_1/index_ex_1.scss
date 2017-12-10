@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+$blurColor:#496bfe;
+$whiteColor: #fff;
+
+@mixin btn($bg, $color:#fff) {
+  height: 55px;
+  width: 225px;
+  line-height: 55px;
+  display: inline-block;
+  padding: 0 15px;
+  background: $bg;
+  color: $color;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    background: darknen ($bg, 35%);
+  }
+}
+  .content-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .first {
+    min-height: 100vh;
+    background: url("img/Image_main.png") no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 48px;
+      margin: 0;
+    }
+    h3 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 22px;
+      color: white;
+      margin: 0;
+    }
+    .search {
+      width: 150px;
+      height: 60px;
+      background: $blurColor;
+      color: $whiteColor;
+      font-size: 14px;
+      //font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      display: inline-block;
+      text-transform: uppercase;
+      border: 4px solid $whiteColor;
+    }
+    .mail {
+      width: 570px;
+      height: 55px;
+      display: inline-block;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    header {
+      background-color: #5474fd;
+      width: 100%;
+      height: 85px;
+      display: inline-block;
+      //position: absolute;
+     bottom: 2px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    /*добавляем клинир*/
+    ul:before {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    header ul li {
+      display: inline-block;
+      float: left;
+      text-transform: uppercase;
+    }
+    a {
+      /*сбросить подчеркивание ссылок*/
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  //вторая секция
+
+  // setka
+.row-12 .col {
+  width: 8.33%;
+}
+.row-12 .col-2 {
+  width: 16.67%;
+}
+.row-12 .col-3 {
+  width: 25%;
+}
+.row-12 .col-4 {
+  width: 33.33%;
+}
+.row-12 .col-5 {
+  width: 41.67%;
+}
+.row-12 .col-6 {
+  width: 50%;
+}
+.row-12 .col-7 {
+  width: 58.33%;
+}
+.row-12 .col-8 {
+  width: 66.67%;
+}
+.row-12 .col-9 {
+  width: 75%;
+}
+.row-12 .col-10 {
+  width: 83.33%;
+}
+.row-12 .col-11 {
+  width: 91.67%;
+}
+.row-12 .col-12 {
+  width: 100%;
+}
+[class^='row-']:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+[class^='col-'] {
+  float: left;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+  // konec setki
+
+
+  #choose_us {
+    background: url("img/bg_ch_us.png");
+    min-height: 690px;
+    .col-6 {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    h1 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 36px;
+    }
+    p {
+      color: white;
+      font-size: 16px;
+    }
+    .view {
+      @include btn($blurColor, white);
+      text-transform: uppercase;
+      //font-family: ;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    span {
+      padding-left: 150px;
+    }
+  }
+
+  //третья секция
+
+.third {
+  min-height: 340px;
+  background: #333333;
+  .row-12 {
+    padding-top: 50px;
+  }
+  p {
+    text-transform: capitalize;
+    //font-family: ;
+    font-size: 36px;
+    color: $whiteColor;
+  }
+}
+
+  //четвертый блок
+.spain_1 {
+  background: url("img/spain_1.png") no-repeat;
+  min-height: 750px;
+  p {
+    color: $whiteColor;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top:250px;
+
+  }
+  a {
+    @include btn($blurColor, white);
+    text-transform: uppercase;
+    //font-family: ;
+    font-size: 16px;
+    box-sizing: border-box;
+
+  }
+}
+
+.spain_2 {
+  background: url("img/spain_2.png") no-repeat;
+  min-height: 750px;
+  p {
+    color: $whiteColor;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top:250px;
+
+  }
+  a {
+    @include btn($blurColor, white);
+    text-transform: uppercase;
+    //font-family: ;
+    font-size: 16px;
+    box-sizing: border-box;
+
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  h1 {
+    color: $whiteColor;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  h2 {
+    color: $whiteColor;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+}
+
+.sumon {
+  background: url("img/bg_sumon.png") no-repeat;
+  min-height: 730px;
+  h1 {
+    color: $whiteColor;
+    text-transform: capitalize;
+    font-size: 36px;
+    text-align: center;
+  }
+  img {
+    float: left;
+  }
+  p{
+    font-size: 16px;
+    color: $whiteColor;
+  }
+}

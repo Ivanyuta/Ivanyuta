@@ -139,39 +139,35 @@ header {
   }
 }
 .slide-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     color: #666666;
     text-transform: capitalize;
-
-    &:after {
-      height: 1px;
-      display: block;
-      content: '';
-      clear: both;
-      //  зачем дисплей блок??????
-      background: $orangeColor;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      color: $orangeColor;
-    }
+    margin: 0;
   }
+   span {
+     width: 100px;
+     height: 1px;
+     background: $orangeColor;
+     display: block;
+   }
+
   h4 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     color: $greyColor;
     text-transform: capitalize;
+    margin: 0;
   }
   .social {
-    // как отцентровать не тем способом что ниже??????
-    //margin: 0 auto;
-    margin-left: 210px;
+
     a {
       margin-left: 10px;
       text-decoration: none;
@@ -183,9 +179,7 @@ header {
     font-family: 'Raleway', sans-serif;
     width: 430px;
     height: 115px;
-    // как отцентровать не тем способом что ниже??????
-    margin-left: 100px;
-    margin-top: 50px;
+
   }
   .view {
     @include btn(white, $greyColor);
@@ -194,22 +188,15 @@ header {
     font-size: 14px;
     border: 1px solid $orangeColor;
     box-sizing: border-box;
-    // как отцентровать не тем способом что ниже??????
-    margin-left: 250px;
-  }
-  .lines {
-    // как отцентровать не тем способом что ниже??????
-    margin-left: 300px;
-    margin-bottom: 30px;
+
   }
 }
-// как отцентровать???
 .dot {
   margin: 0 auto;
   left: 50%;
-  display: inline-block;
-    span {
+  width: max-content;
 
+    span {
       width: 10px;
       height: 10px;
       border-radius: 50%;

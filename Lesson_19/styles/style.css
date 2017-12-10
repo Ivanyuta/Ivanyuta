@@ -3058,67 +3058,59 @@ header {
     display: block;
     clear: both; }
 
-.slide-text h2 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px;
-  color: #666666;
-  text-transform: capitalize; }
-  .slide-text h2:after {
-    height: 1px;
-    display: block;
-    content: '';
-    clear: both;
-    background: #ffcc00;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .slide-text h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #666666;
+    text-transform: capitalize;
+    margin: 0; }
+  .slide-text span {
     width: 100px;
-    color: #ffcc00; }
-.slide-text h4 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  color: #898f8f;
-  text-transform: capitalize; }
-.slide-text .social {
-  margin-left: 210px; }
+    height: 1px;
+    background: #ffcc00;
+    display: block; }
+  .slide-text h4 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #898f8f;
+    text-transform: capitalize;
+    margin: 0; }
   .slide-text .social a {
     margin-left: 10px;
     text-decoration: none; }
-.slide-text p {
-  font-size: 14px;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  width: 430px;
-  height: 115px;
-  margin-left: 100px;
-  margin-top: 50px; }
-.slide-text .view {
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  padding: 0 15px;
-  background: white;
-  color: #898f8f;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  border: 1px solid #ffcc00;
-  box-sizing: border-box;
-  margin-left: 250px; }
-  .slide-text .view:hover {
-    background: darknen white, 35%; }
-.slide-text .lines {
-  margin-left: 300px;
-  margin-bottom: 30px; }
+  .slide-text p {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 430px;
+    height: 115px; }
+  .slide-text .view {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 15px;
+    background: white;
+    color: #898f8f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    border: 1px solid #ffcc00;
+    box-sizing: border-box; }
+    .slide-text .view:hover {
+      background: darknen white, 35%; }
 
 .dot {
   margin: 0 auto;
   left: 50%;
-  display: inline-block; }
+  width: max-content; }
   .dot span {
     width: 10px;
     height: 10px;
