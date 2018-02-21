@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.color-ch {
+  width: 80%;
+  height: 80%;
+  background: grey;
+  margin: 50px auto 0;
+
+  @media all and (max-width: 740px) {
+    background: red;
+  }
+  @media all and (max-width: 640px) {
+    background: green;
+  }
+}
+.row {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .col-10-1 {
+
+    width: 10%;
+    padding: 1%;
+    box-sizing: border-box;
+    float: left;
+    @media all and (max-width: 1023px) {
+      width: 20%;
+    }
+    @media all and (max-width: 767px) {
+    width: 25%;
+  }
+    @media all and (max-width: 639px) {
+      width: 33.33%;
+    }
+  .col-inner {
+    height: 50px;
+    background: #333333;
+  }
+}
+//@media all and (min-width: 640px) and (max-width: 740px){
+//  .color-ch {
+//    background: #f5f5f5;
+//  }
+//}
+//в случае с отслеживанием минимальных размеров брейкпоинты нужно распологать в порядке возрастания, а наоборот - наоборот
+
+//@media all and (max-width: 740px){
+//  .color-ch {
+//    background: red;
+//  }
+//}
+//
+//@media all and (max-width: 640px){
+//  .color-ch {
+//    background: green;
+//  }
+//}
+//@media all and (max-width: 540px){
+//  .color-ch {
+//    background: blue;
+//  }
+//}
+
+

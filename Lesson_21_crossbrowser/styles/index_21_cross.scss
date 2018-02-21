@@ -1,0 +1,18 @@
+//подключаем шрифт
+
+@import "font-awesome";
+
+.icon {
+  font-size: 16px;
+  color: #3c4955;
+  font-family: FontAwesome, sans-serif;
+  &:before {
+    content: '\f2de';
+    margin-right: 5px;
+    display: inline-block;
+  }
+  //при наведении иконка поменяет цвет
+  &:hover:before {
+    color: #00b0b0;
+  }
+}

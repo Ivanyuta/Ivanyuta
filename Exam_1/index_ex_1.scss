@@ -27,13 +27,13 @@ $whiteColor: #fff;
   }
 
   .first {
-    min-height: 100vh;
+    height: 740px;
     background: url("img/Image_main.png") no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    font-size: 0px;
     h1 {
       text-transform: uppercase;
       color: white;
@@ -49,8 +49,10 @@ $whiteColor: #fff;
     }
     .search {
       width: 150px;
-      height: 60px;
-      background: $blurColor;
+      height: 58px;
+      background: $blurColor url("img/lupa1.png") no-repeat;
+      background-position: 115px center;
+      background-size: 15%;
       color: $whiteColor;
       font-size: 14px;
       //font-family: 'Raleway', sans-serif;
@@ -65,39 +67,43 @@ $whiteColor: #fff;
       display: inline-block;
       text-transform: capitalize;
       text-align: center;
+      border: 0;
     }
-    header {
-      background-color: #5474fd;
-      width: 100%;
-      height: 85px;
-      display: inline-block;
-      //position: absolute;
-     bottom: 2px;
-    }
+   }
 
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    /*добавляем клинир*/
-    ul:before {
-      content: '';
-      display: block;
-      clear: both;
-    }
-    header ul li {
-      display: inline-block;
-      float: left;
-      text-transform: uppercase;
-    }
-    a {
-      /*сбросить подчеркивание ссылок*/
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white;
-    }
+header {
+  background-color: #5474fd;
+  width: 100%;
+  height: 85px;
+  display: inline-block;
+  bottom: 2px;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
   }
-
+  ul {
+    margin: 0;
+    padding: 0;
+      li {
+        padding-right: 25px;
+        display: inline-block;
+        float: left;
+        text-transform: uppercase;
+      }
+  }
+  /*добавляем клинир*/
+  ul:before {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .content-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
   //вторая секция
 
   // setka
@@ -155,15 +161,19 @@ $whiteColor: #fff;
 
   #choose_us {
     background: url("img/bg_ch_us.png");
-    min-height: 690px;
+    height: 690px;
+    .row-12 {
+      height: 100%;
+    }
     .col-6 {
       display: inline-flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
+      height: 100%;
     }
     h1 {
-      text-transform: uppercase;
+      text-transform: capitalize;
       color: white;
       font-size: 36px;
     }
@@ -180,6 +190,7 @@ $whiteColor: #fff;
     }
     span {
       padding-left: 150px;
+
     }
   }
 
@@ -187,9 +198,16 @@ $whiteColor: #fff;
 
 .third {
   min-height: 340px;
-  background: #333333;
-  .row-12 {
-    padding-top: 50px;
+  background: #333333 url("img/Shap.png") center no-repeat;
+  .content-inner {
+    div {
+      //padding-top: 50px;
+      width: 33%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-top: 170px;
+      padding-left: 140px;
+    }
   }
   p {
     text-transform: capitalize;
@@ -197,12 +215,15 @@ $whiteColor: #fff;
     font-size: 36px;
     color: $whiteColor;
   }
+  img {
+    background: #333333;
+  }
 }
 
   //четвертый блок
 .spain_1 {
   background: url("img/spain_1.png") no-repeat;
-  min-height: 750px;
+  height: 650px;
   p {
     color: $whiteColor;
   }
@@ -227,7 +248,7 @@ $whiteColor: #fff;
 
 .spain_2 {
   background: url("img/spain_2.png") no-repeat;
-  min-height: 750px;
+  height: 650px;
   p {
     color: $whiteColor;
   }
@@ -270,18 +291,29 @@ footer {
 
 .sumon {
   background: url("img/bg_sumon.png") no-repeat;
-  min-height: 730px;
+  height: 730px;
   h1 {
     color: $whiteColor;
     text-transform: capitalize;
     font-size: 36px;
     text-align: center;
   }
-  img {
-    float: left;
-  }
-  p{
-    font-size: 16px;
-    color: $whiteColor;
+  .citate {
+    background: #333333;
+    width: 1110px;
+    height: 285px;
+
+    img {
+      float: left;
+    }
+    p {
+      font-size: 16px;
+      color: $whiteColor;
+    }
+    h1 {
+      color: $whiteColor;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
   }
 }
